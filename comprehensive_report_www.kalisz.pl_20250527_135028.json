@@ -1,0 +1,260 @@
+{
+    "url": "https://www.kalisz.pl/",
+    "accessibility": {
+        "wcag_compliance": {
+            "level_a": {
+                "score": 8,
+                "total": 10,
+                "percentage": 80.0,
+                "passed": true
+            },
+            "level_aa": {
+                "score": 12,
+                "total": 15,
+                "percentage": 80.0,
+                "passed": true
+            }
+        },
+        "semantic_structure": {
+            "lang_attribute": "pl",
+            "dir_attribute": "Not specified",
+            "headings": {
+                "h1": {
+                    "count": 1,
+                    "texts": [
+                        "Strona Główna - Kalisz.pl"
+                    ]
+                },
+                "h2": {
+                    "count": 3,
+                    "texts": [
+                        "Social",
+                        "Menu",
+                        "Zobacz na mapie"
+                    ]
+                },
+                "h3": {
+                    "count": 28,
+                    "texts": [
+                        "Koncert z okazji Dnia Mamy",
+                        "Przy Domu Pomocy Społecznej pojawi się fioletowy przystanek",
+                        "Osobistości świata kultury wspierają ideę budowy siedziby Filharmonii Kaliskiej",
+                        "Elektroniczny nabór do żłobków publicznych w Kaliszu rusza 1 czerwca",
+                        "RapGra na Polach Marsowych – nowy letni festiwal muzyczny w Kaliszu w czerwcu"
+                    ]
+                },
+                "h4": {
+                    "count": 19,
+                    "texts": [
+                        "{{ item.title }}",
+                        "Urząd nieczynny 2 maja",
+                        "Urząd nieczynny 2 maja",
+                        "Przekroczenie Pyłu PM10",
+                        "Przekroczenie Pyłu PM10"
+                    ]
+                },
+                "h5": {
+                    "count": 6,
+                    "texts": [
+                        "Zarząd Dróg  MiejskichJednostka",
+                        "Kaliskie LinieAutobusoweSpółka",
+                        "Przedsiębiorstwo Wodociągów i Kanalizacji w KaliszuSpółka zo.o.",
+                        "StowarzyszenieAglomeracjaKalisko-OstrowskiejStowarzyszenie jednostek",
+                        "Aquapark  KaliszSpółka"
+                    ]
+                },
+                "h6": {
+                    "count": 0,
+                    "texts": []
+                }
+            },
+            "heading_hierarchy_issues": false,
+            "empty_headings": 0,
+            "html5_landmarks": {
+                "header": 1,
+                "nav": 2,
+                "main": 1,
+                "aside": 0,
+                "footer": 1,
+                "section": 0,
+                "article": 0
+            },
+            "aria_landmarks": {
+                "banner": 0,
+                "navigation": 0,
+                "main": 0,
+                "contentinfo": 0,
+                "complementary": 0,
+                "search": 0
+            }
+        },
+        "keyboard_navigation": {
+            "total_interactive_elements": 379,
+            "tabindex_issues": [
+                "a with tabindex=1",
+                "a with tabindex=2",
+                "a with tabindex=6",
+                "a with tabindex=7",
+                "a with tabindex=8",
+                "a with tabindex=7",
+                "a with tabindex=8",
+                "a with tabindex=9",
+                "a with tabindex=5"
+            ],
+            "skip_links": [],
+            "focus_indicators": 0
+        },
+        "screen_reader": {
+            "images": {
+                "total": 31,
+                "with_alt": 28,
+                "with_empty_alt": 0,
+                "without_alt": 3,
+                "decorative_properly_marked": 0
+            },
+            "aria_labels": 0,
+            "aria_describedby": 0,
+            "aria_labelledby": 0,
+            "sr_only_content": 0
+        },
+        "multimedia": {
+            "videos": {
+                "total": 0,
+                "with_captions": 0,
+                "with_controls": 0,
+                "autoplay": 0
+            },
+            "audios": {
+                "total": 0,
+                "with_controls": 0,
+                "autoplay": 0
+            },
+            "iframes": {
+                "total": 0,
+                "with_title": 0,
+                "with_aria_label": 0
+            }
+        },
+        "forms": {
+            "total_forms": 2,
+            "forms_with_labels": 0,
+            "total_inputs": 12,
+            "inputs_with_labels": 0,
+            "inputs_with_placeholders": 1,
+            "required_fields": 0,
+            "fieldsets": 0,
+            "legends": 0
+        },
+        "color_contrast": {},
+        "text_content": {
+            "total_text_length": 46338,
+            "paragraphs": 28,
+            "lists": {
+                "ul": 62,
+                "ol": 0,
+                "dl": 0
+            },
+            "tables": {
+                "total": 0,
+                "with_headers": 0,
+                "with_caption": 0,
+                "with_summary": 0,
+                "data_tables": 0,
+                "layout_tables": 0
+            },
+            "abbreviations": 0,
+            "quotes": 0
+        }
+    },
+    "performance": {
+        "loading": {
+            "dns_lookup_time": 1.77,
+            "total_load_time": 2.27,
+            "response_time": 2.27,
+            "status_code": 200,
+            "response_size_bytes": 163812,
+            "response_size_kb": 159.97,
+            "response_size_mb": 0.156
+        },
+        "resources": {
+            "total_images": 31,
+            "total_css_files": 2,
+            "total_js_files": 3,
+            "external_links": 94,
+            "images_without_dimensions": 23,
+            "image_formats": {
+                "png": 8,
+                "jpg": 19,
+                "jpeg": 1
+            }
+        },
+        "security": {
+            "headers": {
+                "Strict-Transport-Security": "Missing",
+                "Content-Security-Policy": "Missing",
+                "X-Content-Type-Options": "Missing",
+                "X-Frame-Options": "Missing",
+                "X-XSS-Protection": "Missing",
+                "Referrer-Policy": "Missing",
+                "Permissions-Policy": "Missing"
+            },
+            "https_enabled": true,
+            "ssl_certificate": {
+                "subject": {
+                    "commonName": "www.kalisz.pl"
+                },
+                "issuer": {
+                    "countryName": "US",
+                    "organizationName": "Let's Encrypt",
+                    "commonName": "R11"
+                },
+                "version": 3,
+                "serial_number": "0635C503C41798924BE92D0E35C6E0D72853",
+                "not_before": "Apr 17 03:31:42 2025 GMT",
+                "not_after": "Jul 16 03:31:41 2025 GMT"
+            },
+            "ssl_days_to_expiry": 49,
+            "ssl_expires_soon": false
+        },
+        "seo": {
+            "title": "Miasto Kalisz",
+            "title_length": 13,
+            "meta_description": "Oficjalny serwis Miasta Kalisz",
+            "meta_description_length": 30,
+            "meta_keywords": "",
+            "viewport_meta": "width=device-width, initial-scale=1",
+            "canonical_url": "https://www.kalisz.pl"
+        },
+        "mobile": {
+            "viewport_configured": true,
+            "responsive_images": 0,
+            "css_media_queries": 0
+        },
+        "technical": {
+            "doctype": "html",
+            "html_validation_errors": 1,
+            "total_dom_elements": 1344,
+            "inline_styles": 1,
+            "inline_scripts": 2
+        }
+    },
+    "usability": {
+        "navigation": {
+            "nav_elements": 2,
+            "breadcrumbs": 0,
+            "search_functionality": true
+        },
+        "content": {
+            "total_links": 341,
+            "external_links": 76,
+            "external_links_with_indication": 75,
+            "print_stylesheet": false
+        }
+    },
+    "date_analyzed": "2025-05-27 13:50:25",
+    "scores": {
+        "performance": 85,
+        "accessibility": 80.0,
+        "overall": 82.5
+    }
+}

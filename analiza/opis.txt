@@ -1,0 +1,105 @@
+Screenshot 2025-05-27 at 14.11.16.jpg oraz Screenshot 2025-05-27 at 14.11.16 copy.jpg:
+
+    Co to przedstawia: Oba zrzuty ekranu pokazują "Ocenę podstawowych wskaźników internetowych: niezaliczone" dla wersji mobilnej strony www.kalisz.pl. Są to wyniki tzw. Core Web Vitals, czyli kluczowych wskaźników, które Google wykorzystuje do oceny doświadczeń użytkownika na stronie.
+    Szczegóły:
+        Largest Contentful Paint (LCP) - 4.5 s: Jest to czas, w którym największy element treści na stronie staje się widoczny. Wynik "Słabe" (powyżej 4 s) oznacza, że strona ładuje się wolno i użytkownicy mogą czekać zbyt długo na zobaczenie głównej zawartości. Cel to poniżej 2.5 s.
+        Interaction to Next Paint (INP) - 42 ms: Ten wskaźnik mierzy opóźnienie od momentu pierwszej interakcji użytkownika (np. kliknięcia) do momentu, gdy przeglądarka faktycznie reaguje na tę interakcję (np. pokazuje efekt kliknięcia). Wynik "Słabe" (powyżej 500 ms) wskazuje na znaczne opóźnienia, co może frustrować użytkowników. Cel to poniżej 200 ms. (Uwaga: na zrzucie ekranu jest 42 ms, co powinno być "Dobre", ale jest oznaczone jako "Słabe" w podsumowaniu procentowym. To może być błąd w samej aplikacji lub interpretacji, ale ogólny wniosek jest taki, że wymaga poprawy w grupie "Słabe").
+        Cumulative Layout Shift (CLS) - 0.05: Mierzy wizualną stabilność strony, czyli to, jak bardzo elementy na stronie przesuwają się w trakcie ładowania. Wynik "Dobre" (poniżej 0.1) oznacza, że strona jest stabilna wizualnie i użytkownicy nie doświadczają nagłych przesunięć treści.
+    Wnioski dla www.kalisz.pl: Wersja mobilna strony ma znaczące problemy z szybkością ładowania głównych treści (LCP) i responsywnością na interakcje użytkownika (INP), co negatywnie wpływa na doświadczenia użytkowników i może obniżać pozycję w wynikach wyszukiwania Google. CLS jest na dobrym poziomie.
+
+Screenshot 2025-05-27 at 14.12.16.jpg:
+
+    Co to przedstawia: To jest główny ekran podsumowania audytu Lighthouse dla www.kalisz.pl (prawdopodobnie dla wersji desktopowej, sądząc po znacznie lepszych wynikach niż te dla mobilnej). Pokazuje ogólne oceny w czterech kategoriach: Wydajność (67), Ułatwienia dostępu (81), Sprawdzone metody (78) i SEO (92). W dolnej części widoczne są szczegółowe metryki wydajności dla wersji desktopowej.
+    Szczegóły:
+        Wydajność (Performance): Wynik 67/100 jest przeciętny. Oznacza to, że strona mogłaby ładować się i renderować szybciej.
+            First Contentful Paint (FCP) - 0.4 s: Bardzo dobry wynik, oznacza, że pierwsza treść na stronie pojawia się bardzo szybko.
+            Total Blocking Time (TBT) - 210 ms: Mierzy czas, przez który główny wątek przeglądarki jest zablokowany, uniemożliwiając interakcję użytkownika. Jest to umiarkowany wynik, sugerujący pewne opóźnienia w interaktywności.
+            Speed Index - 7.1 s: Wskaźnik, który mierzy, jak szybko treść wizualna jest wyświetlana podczas ładowania strony. Wyższa wartość oznacza wolniejsze wizualne ukończenie ładowania.
+            Largest Contentful Paint (LCP) - 2.9 s: Wynik jest bliski górnej granicy "Dobre" (poniżej 2.5 s) i znacznie lepszy niż w wersji mobilnej.
+            Cumulative Layout Shift (CLS) - 0.009: Bardzo dobry wynik, strona jest stabilna wizualnie.
+        Ułatwienia dostępu (Accessibility): Wynik 81/100 jest dobry, ale sugeruje, że są jeszcze miejsca do poprawy, aby strona była bardziej użyteczna dla osób z niepełnosprawnościami.
+        Sprawdzone metody (Best Practices): Wynik 78/100 oznacza, że strona przestrzega większości zalecanych dobrych praktyk webowych, ale są pewne odstępstwa.
+        SEO: Wynik 92/100 jest bardzo dobry, co sugeruje, że strona jest dobrze zoptymalizowana pod kątem wyszukiwarek, z wyjątkiem drobnych problemów.
+    Wnioski dla www.kalisz.pl: Wersja desktopowa strony działa znacznie lepiej niż mobilna, ale wciąż ma potencjał do poprawy wydajności. Dostępność i sprawdzone metody wymagają drobnych korekt. SEO jest na wysokim poziomie.
+
+Screenshot 2025-05-27 at 14.12.30.jpg:
+
+    Co to przedstawia: To jest "Lighthouse Treemap", czyli graficzna reprezentacja rozmiarów poszczególnych zasobów (plików JavaScript, CSS, obrazów itp.) ładowanych przez stronę www.kalisz.pl. Kolorowe prostokąty reprezentują pliki, a ich rozmiar odpowiada rozmiarowi pliku. Pomaga to zidentyfikować, które zasoby są największe i mogą spowalniać ładowanie strony.
+    Szczegóły: Widać, że największymi elementami są pliki JavaScript, takie jak "app-81223bdce.js" (387.8 KB), pliki związane z Google Tag Manager i Google Analytics. Duże rozmiary tych plików mogą znacząco wpływać na czas ładowania strony i wydajność.
+    Wnioski dla www.kalisz.pl: Strona www.kalisz.pl obciąża przeglądarkę znaczną ilością kodu JavaScript, co jest typową przyczyną niskiej wydajności. Redukcja rozmiaru tych plików (minifikacja, kompresja, usunięcie nieużywanego kodu) mogłaby znacząco przyspieszyć ładowanie strony.
+
+Screenshot 2025-05-27 at 14.12.44.jpg:
+
+    Co to przedstawia: Sekcja "Diagnostyka" z raportu Lighthouse dla www.kalisz.pl. To szczegółowa lista sugestii i ostrzeżeń dotyczących optymalizacji wydajności strony. Dzieli się na elementy do poprawy (czerwone wykrzykniki), potencjalne oszczędności (żółte kropki) i zaliczone audyty (zielone kropki).
+    Szczegóły:
+        Kluczowe problemy (czerwone wykrzykniki):
+            Skrócony wstępny czas reakcji serwera - 4900 ms: Serwer odpowiada na żądanie bardzo długo, co jest poważnym problemem z wydajnością.
+            Największy wyrenderowany element - 2900 ms: Zgodnie z LCP.
+            Ogranicz nieużywany JavaScript/CSS: Strona ładuje dużo kodu, który nie jest natychmiastowo potrzebny, spowalniając renderowanie.
+            Wyświetlaj obrazy w formatach nowej generacji: Obrazy nie są w zoptymalizowanych formatach (np. WebP), które mogłyby zmniejszyć ich rozmiar.
+            Zmień rozmiar obrazów: Obrazy nie są skalowane do odpowiednich rozmiarów przed załadowaniem.
+            Unikaj wyświetlania starszych skryptów JavaScript w nowoczesnych przeglądarkach: Nieefektywne ładowanie skryptów.
+            Wyeliminuj zasoby blokujące renderowanie: Pliki CSS/JS blokują renderowanie strony, zanim zostaną załadowane.
+    Wnioski dla www.kalisz.pl: Strona ma wiele problemów z wydajnością na poziomie serwera i optymalizacji zasobów (JavaScript, CSS, obrazy). Wymaga gruntownej optymalizacji, aby poprawić szybkość ładowania i renderowania.
+
+Screenshot 2025-05-27 at 14.12.56.png:
+
+    Co to przedstawia: Sekcja "Ułatwienia dostępu" z raportu Lighthouse dla www.kalisz.pl, z ogólną oceną 81. Wyświetla listę problemów, które utrudniają korzystanie ze strony osobom z niepełnosprawnościami, np. korzystającym z czytników ekranu.
+    Szczegóły:
+        Nazwy i Etykiety: Brak dostępnych nazw dla czytników ekranu, co utrudnia nawigację osobom niewidomym lub niedowidzącym.
+        Kontrast: Niewystarczający współczynnik kontrastu między kolorami tła a pierwszego planu, co sprawia, że tekst jest trudny do odczytania dla osób z wadami wzroku. Linki nie różnią się wystarczająco od otaczającego tekstu.
+        Nawigacja: Niektóre elementy interaktywne (np. przyciski, linki) mogą nie być dostępne za pomocą klawiatury (brak atrybutu tabindex lub nieprawidłowe wartości), a nagłówki nie pojawiają się w logicznej kolejności.
+        Sprawdzone metody: Elementy docelowe (np. przyciski, linki) są zbyt małe lub mają niewłaściwe odstępy, co utrudnia ich klikanie.
+    Wnioski dla www.kalisz.pl: Strona www.kalisz.pl wymaga znacznych poprawek w zakresie dostępności, aby być bardziej użyteczna dla wszystkich użytkowników. Kluczowe obszary to semantyczne HTML, kontrast kolorów i nawigacja klawiaturowa.
+
+Screenshot 2025-05-27 at 14.13.06.png:
+
+    Co to przedstawia: Sekcja "Sprawdzone metody" z raportu Lighthouse dla www.kalisz.pl, z ogólną oceną 78. Wykrywa, czy strona przestrzega nowoczesnych standardów i dobrych praktyk webowych.
+    Szczegóły:
+        Ogólne problemy (czerwone wykrzykniki):
+            Używa wycofanych interfejsów API: Strona korzysta z przestarzałych funkcji programistycznych, które mogą przestać działać w przyszłości lub powodować problemy.
+            Błędy przeglądarki zostały zarejestrowane w konsoli: Istnieją błędy JavaScript lub inne, które mogą wpływać na funkcjonalność strony.
+            Brakuje map źródeł dla własnych dużych plików JavaScript: Utrudnia debugowanie i analizę kodu.
+        Zaufanie i bezpieczeństwo (zielone kropki): Strona wydaje się być dobrze zabezpieczona, z skonfigurowanym CSP (Content Security Policy), silnymi zasadami HSTS i mechanizmami ochrony przed atakami XSS i clickjackingiem.
+    Wnioski dla www.kalisz.pl: Strona www.kalisz.pl wymaga aktualizacji kodu, aby unikać przestarzałych technologii i rozwiązywać błędy w konsoli przeglądarki. Aspekty bezpieczeństwa są na dobrym poziomie.
+
+Screenshot 2025-05-27 at 14.13.21.png:
+
+    Co to przedstawia: Sekcja "SEO" z raportu Lighthouse dla www.kalisz.pl, z bardzo dobrą ogólną oceną 92. Ocenia, czy strona jest zoptymalizowana pod kątem widoczności w wyszukiwarkach.
+    Szczegóły:
+        Skanowanie i indeksowanie (czerwony wykrzyknik):
+            Linków nie można zindeksować: Wskazuje, że niektóre linki na stronie mogą być niedostępne dla robotów wyszukiwarek, co utrudnia ich indeksowanie i wpływa na widoczność strony w wynikach wyszukiwania. Może to być spowodowane błędami w pliku robots.txt, tagami noindex, problemami z linkowaniem wewnętrznym itp.
+    Wnioski dla www.kalisz.pl: Strona jest ogólnie dobrze zoptymalizowana pod kątem SEO, ale problem z niemożliwymi do zindeksowania linkami jest krytyczny i powinien zostać natychmiast naprawiony, aby zapewnić pełną widoczność w wyszukiwarkach.
+
+Screenshot 2025-05-27 at 14.13.41.jpg oraz Screenshot 2025-05-27 at 14.13.49.jpg:
+
+    Co to przedstawia: Te zrzuty ekranu pokazują długie listy "Zaliczonych Audytów" i "Nie Dotyczy" w kontekście dostępności strony www.kalisz.pl. Są to szczegółowe punkty kontrolne, które strona przeszła pomyślnie (zielone kropki) lub które nie miały zastosowania do danej strony (szare kropki).
+    Szczegóły: Wskazują na przestrzeganie wielu dobrych praktyk, takich jak:
+        Poprawne użycie atrybutów ARIA (np. aria-expanded, aria-hidden, role).
+        Obecność atrybutów alt dla obrazów graficznych.
+        Poprawne użycie metatagów viewport.
+        Istnienie tagów title i lang.
+        Prawidłowe linkowanie i etykietowanie formularzy.
+        Elementy listy zawierają poprawne elementy składowe (<li> w <ul>).
+    Wnioski dla www.kalisz.pl: Mimo problemów z dostępnością wymienionych wcześniej, strona spełnia wiele podstawowych wymagań w zakresie użyteczności i semantyki HTML, co jest dobrym punktem wyjścia do dalszych poprawek. Lista "nie dotyczy" pokazuje, że niektóre audyty nie mają zastosowania, co jest normalne.
+
+
+Screenshot 2025-05-27 at 14.13.21.png: Ten obraz przedstawia raport audytu Lighthouse dla strony www.kalisz.pl, koncentrujący się na widoku stacjonarnym (komputerowym). Pokazuje wynik SEO wynoszący 92, co wskazuje na dobrą optymalizację. Poniżej znajduje się sekcja "Skanowanie i indeksowanie" z ostrzeżeniem "Linków nie można zindeksować". Istnieją również sekcje dotyczące "Dodatkowych elementów do ręcznego sprawdzenia" i "Zaliczonych audytów".
+
+Screenshot 2025-05-27 at 14.13.41.jpg: Ten obraz przedstawia szczegółową listę zaliczonych audytów z raportu dostępności lub wydajności strony internetowej www.kalisz.pl, prawdopodobnie z narzędzia takiego jak Lighthouse. Wymienia wiele spełnionych najlepszych praktyk w zakresie dostępności, takich jak prawidłowe użycie atrybutów ARIA, odpowiednie role elementów i właściwy tekst alternatywny dla obrazów.
+
+Screenshot 2025-05-27 at 14.13.49.jpg: Ten obraz przedstawia listę pozycji "Nie dotyczy" z raportu audytu strony internetowej www.kalisz.pl, prawdopodobnie związanych z dostępnością lub wydajnością. Są to głównie najlepsze praktyki lub kontrole, które nie miały zastosowania do analizowanej strony internetowej, takie jak specyficzne atrybuty ARIA lub konfiguracje elementów HTML.
+
+Screenshot 2025-05-27 at 14.14.06.png: Ten obraz przedstawia raport audytu Lighthouse dla strony www.kalisz.pl, konkretnie dla sekcji "Sprawdzone metody" (Najlepsze Praktyki) z wynikiem 78. Wskazuje jedno ostrzeżenie dotyczące "Użycia wycofanych interfejsów API". Inne sekcje obejmują "Ogólne" (z ostrzeżeniami o błędach konsoli, brakujących mapach źródłowych JavaScript i wykrytych bibliotekach), "Zaufanie i bezpieczeństwo" (wymieniające sprawdzenia XSS, HSTS, COOP, CSP i clickjackingu) oraz "Zaliczone audyty" (w tym HTTPS, brak plików cookie stron trzecich, zgoda użytkownika, optymalizacja obrazów, ustawienia widoku, typ dokumentu HTML, zestaw znaków i brak problemów w narzędziach deweloperskich Chrome).
+
+Screenshot 2025-05-27 at 14.14.17.png: Ten obraz przedstawia raport audytu Lighthouse dla strony www.kalisz.pl, pokazujący wynik SEO wynoszący 92. Podobnie jak pierwszy obraz, podkreśla ostrzeżenie w sekcji "Skanowanie i indeksowanie" stwierdzające "Linków nie można zindeksować". Pokazuje również "Dodatkowe elementy do ręcznego sprawdzenia" (z jednym elementem, "Uporządkowane dane są prawidłowe") oraz listę 9 "Zaliczonych audytów" związanych z SEO, takich jak indeksowanie strony, element title, meta description, kod stanu HTTP, opisowe linki, robots.txt, atrybuty alt, hreflang i rel=canonical.
+
+Screenshot 2025-05-27 at 14.16.01.png: Ten obraz przedstawia stronę internetową z narzędzia WebPageTest firmy Catchpoint, wskazując, że trwa test dla adresu URL "https://www.kalisz.pl/". Test jest uruchamiany z "Frankfurtu, Niemcy - Firefox - Kabel" z 3 przebiegami testowymi i określonymi szczegółami połączenia. Pokazuje również, że test "Czeka za 364 innymi testami...".
+
+Screenshot 2025-05-27 at 14.17.23.jpg: Ten obraz przedstawia wyniki z narzędzia Nu HTML Checker dla adresu URL "https://www.kalisz.pl/". Wymienia różne błędy i ostrzeżenia związane z poprawnością HTML, w tym "Trailing slash on void elements", "No space between attributes" i "Bad value for attribute 'width' on element 'img'".
+
+Screenshot 2025-05-27 at 14.17.34.jpg: Ten obraz jest kontynuacją wyników Nu HTML Checker dla "https://www.kalisz.pl/". Nadal wymienia błędy i ostrzeżenia związane z poprawnością HTML, takie jak "No space between attributes", "Bad value for attribute 'width'" i "Trailing slash on void elements".
+
+Screenshot 2025-05-27 at 14.20.17.jpg: Ten obraz przedstawia raport oceny dostępności z narzędzia WAVE dla strony internetowej "https://www.kalisz.pl/". Lewy pasek boczny zawiera podsumowanie błędów (1), błędów kontrastu (126), alertów (140) i elementów strukturalnych (131). Główna część zawartości wyświetla stronę internetową z nałożonymi różnymi ikonami, wskazującymi na problemy z dostępnością. Widoczna jest prominentna ikona błędu (czerwony X) i liczne ikony błędów kontrastu.
+
+Screenshot 2025-05-27 at 14.20.47.jpg: Ten obraz to kolejny widok raportu oceny dostępności WAVE dla "https://www.kalisz.pl/". Koncentruje się na sekcji "Szczegóły", szczególnie podkreślając "1 Błąd" z "1 X Brakująca etykieta formularza" oraz "126 Błędów kontrastu" z wizualną reprezentacją wszystkich elementów o niskim kontraście. Główna część zawartości strony internetowej jest nadal widoczna z nakładkami wskazującymi problemy z dostępnością.
